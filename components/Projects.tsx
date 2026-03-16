@@ -23,6 +23,10 @@ export default function Projects({ projects }: ProjectsProps) {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
 
   const filtered = activeCategory === 'all' ? projects : projects.filter((p) => p.category === activeCategory);
+  const sortedProjects = [...filtered].sort((a, b) => {
+    if (a.featured !== b.featured) return a.featured ? -1 : 1;
+    return a.order - b.order;
+  });
 
   return (
     <section id="projects" className="relative py-24 sm:py-32" ref={ref}>
@@ -73,7 +77,7 @@ export default function Projects({ projects }: ProjectsProps) {
         {/* Project Grid */}
         <div className="grid md:grid-cols-2 gap-6">
           <AnimatePresence mode="popLayout">
-            {filtered.map((project, i) => (
+            {sortedProjects.map((project, i) => (
               <motion.div
                 key={project.slug}
                 layout

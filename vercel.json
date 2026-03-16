@@ -1,0 +1,6 @@
+{
+  "name": "portfolio-theo",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs"
+}

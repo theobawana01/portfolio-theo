@@ -108,7 +108,7 @@ export default function Contact({ profile }: ContactProps) {
                 <div>
                   <p className="text-xs text-surface-500 uppercase tracking-wider">{t.contact.githubLabel}</p>
                   <p className="text-surface-200 font-medium text-sm group-hover:text-accent-400 transition-colors">
-                    github.com/theobawana
+                    github.com/theobawana01
                   </p>
                 </div>
               </a>

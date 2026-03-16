@@ -82,7 +82,7 @@ export default function Footer() {
             <h4 className="text-surface-100 font-semibold text-sm mb-4">{t.footer.socialTitle}</h4>
             <div className="flex gap-3">
               <a
-                href="https://github.com/theobawana"
+                href="https://github.com/01"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-surface-800 flex items-center justify-center text-surface-400 hover:text-accent-400 hover:bg-surface-700 transition-all"
