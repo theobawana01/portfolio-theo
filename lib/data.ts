@@ -298,7 +298,7 @@ const projects: Project[] = [
     technologies: ['Python', 'NLP', 'Transformers', 'BERT', 'GPT', 'RAG', 'Next.js', 'FastAPI'],
     metrics: {},
     github_url: '',
-    demo_url: 'https://snaptaf02.vercel.app/analytics',
+    demo_url: 'https://snaptaf.vercel.app',
     image: null,
     featured: true,
     is_confidential: false,
